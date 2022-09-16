@@ -349,6 +349,7 @@ footer {
 .border-box {
   padding: 24px 20px;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 .img {
   display: block;
