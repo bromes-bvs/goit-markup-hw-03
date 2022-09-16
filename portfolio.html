@@ -11,140 +11,187 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="page">
     <!-- Верхня лінія(Шапка) -->
     <header class="page-header">
-      <nav class="main-nav">
-        <a class="logo link" href="./index.html"><span class="accent">Web</span>Studio</a>
-        <ul class="nav-list">
-          <li class="nav-item"><a class="link" href="./index.html">Студія</a></li>
-          <li class="nav-item"><a class="link current" href="./portfolio.html">Портфоліо</a></li>
-          <li class="nav-item"><a class="link" href="">Контакти</a></li>
+      <div class="container">
+        <nav class="main-nav">
+          <a class="logo link" href="./index.html"><span class="accent">Web</span>Studio</a>
+          <ul class="list nav-list">
+            <li class="nav-item"><a class="link" href="./index.html">Студія</a></li>
+            <li class="nav-item"><a class="link current" href="./portfolio.html">Портфоліо</a></li>
+            <li class="nav-item"><a class="link" href="">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="list header-conacts">
+          <li class="сontacts-item">
+            <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="сontacts-item">
+            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="header-conacts">
-        <li class="сontacts-item">
-          <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="сontacts-item">
-          <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <!-- Основний контент сторінки -->
     <main class="page-main">
-      <section class="project-section">
+      <section class="section project">
         <!-- Цей h1 буде сховано -->
         <h1 class="projects-title visually-hidden">Наші проєкти</h1>
         <!-- Список філтрів -->
-        <ul class="filters-buttons">
-          <li class="filter"><button class="current button" type="button">Усі</button></li>
-          <li class="filter"><button class="secondary button" type="button">Веб-сайти</button></li>
-          <li class="filter"><button class="secondary button" type="button">Додатки</button></li>
-          <li class="filter"><button class="secondary button" type="button">Дизайн</button></li>
-          <li class="filter"><button class="secondary button" type="button">Маркетинг</button></li>
-        </ul>
+        <div class="container">
+          <ul class="list filters-buttons">
+            <li class="filter"><button class="current button" type="button">Усі</button></li>
+            <li class="filter">
+              <button class="secondary button" type="button">Веб-сайти</button>
+            </li>
+            <li class="filter"><button class="secondary button" type="button">Додатки</button></li>
+            <li class="filter"><button class="secondary button" type="button">Дизайн</button></li>
+            <li class="filter">
+              <button class="secondary button" type="button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
         <!-- Список проєктів -->
-        <ul class="projects-list">
-          <li class="project-item">
-            <a class="project link" href="">
-              <img
-                class="img"
-                src="./images/img1s.jpg"
-                alt="Приклад роботи студії під назвою Технокряк"
-                width="370"
-              />
-              <h2 class="title">Технокряк</h2>
-              <p class="description">Веб-сайт</p>
-            </a>
-          </li>
-          <li class="project-item">
-            <a class="project link" href="">
-              <img
-                class="img"
-                src="./images/img2s.jpg"
-                alt="Приклад постера розробленого студією"
-                width="370"
-              />
-              <h2 class="title">Постер New Orlean vs Golden Star</h2>
-              <p class="description">Дизайн</p>
-            </a>
-          </li>
-          <li class="project-item">
-            <a class="project link" href="">
-              <img class="img" src="./images/img3s.jpg" alt="Приклад дизайну додатка" width="370" />
-              <h2 class="title">Ресторан Seafood</h2>
-              <p class="description">Додаток</p>
-            </a>
-          </li>
-          <li class="project-item">
-            <a class="project link" href="">
-              <img
-                class="img"
-                src="./images/img4s.jpg"
-                alt="Приклад маркетингового рішення"
-                width="370"
-              />
-              <h2 class="title">Проєкт Prime</h2>
-              <p class="description">Маркетинг</p>
-            </a>
-          </li>
-          <li class="project-item">
-            <a class="project link" href="">
-              <img class="img" src="./images/img5s.jpg" alt="Приклад вигляду додатка" width="370" />
-              <h2 class="title">Проєкт Boxes</h2>
-              <p class="description">Додаток</p>
-            </a>
-          </li>
-          <li class="project-item">
-            <a class="project link" href="">
-              <img
-                class="img"
-                src="./images/img6s.jpg"
-                alt="Приклад вигляду Веб-сайту"
-                width="370"
-              />
-              <h2 class="title">Inspiration has no Borders</h2>
-              <p class="description">Веб-сайт</p>
-            </a>
-          </li>
-          <li class="project-item">
-            <a class="project link" href="">
-              <img class="img" src="./images/img7s.jpg" alt="Приклад дизайну книги" width="370" />
-              <h2 class="title">Видання Limited Edition</h2>
-              <p class="description">Дизайн</p>
-            </a>
-          </li>
-          <li class="project-item">
-            <a class="project link" href="">
-              <img class="img" src="./images/img8s.jpg" alt="Приклад лейби с написом" width="370" />
-              <h2 class="title">Проєкт LAB</h2>
-              <p class="description">Маркетинг</p>
-            </a>
-          </li>
-          <li class="project-item">
-            <a class="project link" href="">
-              <img
-                class="img"
-                src="./images/img9s.jpg"
-                alt="Відкритий додаток на ноутбуку"
-                width="370"
-              />
-              <h2 class="title">Growing Business</h2>
-              <p class="description">Додаток</p>
-            </a>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="list projects-list">
+            <li class="project-item">
+              <a class="project link" href="">
+                <img
+                  class="img"
+                  src="./images/img1s.jpg"
+                  alt="Приклад роботи студії під назвою Технокряк"
+                  width="370"
+                />
+                <div class="border-box">
+                  <h2 class="title">Технокряк</h2>
+                  <p class="description">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="project link" href="">
+                <img
+                  class="img"
+                  src="./images/img2s.jpg"
+                  alt="Приклад постера розробленого студією"
+                  width="370"
+                />
+                <div class="border-box">
+                  <h2 class="title">Постер New Orlean vs Golden Star</h2>
+                  <p class="description">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="project link" href="">
+                <img
+                  class="img"
+                  src="./images/img3s.jpg"
+                  alt="Приклад дизайну додатка"
+                  width="370"
+                />
+                <div class="border-box">
+                  <h2 class="title">Ресторан Seafood</h2>
+                  <p class="description">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="project link" href="">
+                <img
+                  class="img"
+                  src="./images/img4s.jpg"
+                  alt="Приклад маркетингового рішення"
+                  width="370"
+                />
+                <div class="border-box">
+                  <h2 class="title">Проєкт Prime</h2>
+                  <p class="description">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="project link" href="">
+                <img
+                  class="img"
+                  src="./images/img5s.jpg"
+                  alt="Приклад вигляду додатка"
+                  width="370"
+                />
+                <div class="border-box">
+                  <h2 class="title">Проєкт Boxes</h2>
+                  <p class="description">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="project link" href="">
+                <img
+                  class="img"
+                  src="./images/img6s.jpg"
+                  alt="Приклад вигляду Веб-сайту"
+                  width="370"
+                />
+                <div class="border-box">
+                  <h2 class="title">Inspiration has no Borders</h2>
+                  <p class="description">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="project link" href="">
+                <img class="img" src="./images/img7s.jpg" alt="Приклад дизайну книги" width="370" />
+                <div class="border-box">
+                  <h2 class="title">Видання Limited Edition</h2>
+                  <p class="description">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="project link" href="">
+                <img
+                  class="img"
+                  src="./images/img8s.jpg"
+                  alt="Приклад лейби с написом"
+                  width="370"
+                />
+                <div class="border-box">
+                  <h2 class="title">Проєкт LAB</h2>
+                  <p class="description">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a class="project link" href="">
+                <img
+                  class="img"
+                  src="./images/img9s.jpg"
+                  alt="Відкритий додаток на ноутбуку"
+                  width="370"
+                />
+                <div class="border-box">
+                  <h2 class="title">Growing Business</h2>
+                  <p class="description">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Footer -->
     <footer class="page-footer">
-      <div class="footer-contacts">
+      <div class="container">
         <a class="link logo" href="./index.html"><span class="accent">Web</span>Studio</a>
         <address class="footer-contacts">
-          <ul class="contacts-list">
+          <ul class="list contacts-list">
             <li class="contacts-item">
               <a class="contacts maps link" href="">м. Київ, пр-т Лесі Українки, 26</a>
             </li>
